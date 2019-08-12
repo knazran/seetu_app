@@ -1,0 +1,21 @@
+
+<ion-content padding>
+  <h1><strong>Correct!</strong></h1>
+  <h5>How many floors does the Petronas Twin Towers has?</h5>
+  <ion-button color="success" expand="block" fill='outline' [routerLink]="['/start-trip']" (click)='closePopover()'>
+    <!-- <strong style="text-align: left">A. </strong> -->
+    88 Floors
+  </ion-button>
+  <br>
+  <img style="height:185px" src="../../assets/icon/klcc.png">
+  <h5>The Petronas Twin Towers has 88 floors and they have a Sky Bridge at the 41st floor.</h5>
+
+  <ion-chip color="danger" style='width:95%; margin-bottom: 15px'>
+    <ion-icon name="rainy" ></ion-icon>
+    <ion-label>Sher did not got it right... :(</ion-label>
+  </ion-chip> 
+  <ion-button color="primary" expand="block" [routerLink]="['/start-trip']" (click)='closePopover()'>
+    <!-- <strong style="text-align: left">A. </strong> -->
+    Dismiss
+  </ion-button>
+</ion-content>

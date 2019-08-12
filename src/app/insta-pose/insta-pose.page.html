@@ -1,0 +1,24 @@
+
+<ion-content padding>
+  <h1><strong>Picture Spot Detected!</strong></h1>
+  <h5>There is an insta-worthy place nearby</h5>
+  <img src="../../assets/icon/park.png">
+  <h4>Suria KLCC Fountain</h4>
+  <ion-chip color="success" style='width:95%'>
+    <ion-icon name="gift" ></ion-icon>
+    <ion-label><strong>119</strong> people were here</ion-label>
+  </ion-chip>
+  <ion-chip color="success" style='width:95%'>
+    
+    <ion-label>It is the 'golden hour'. Perfect for that insta-picture</ion-label>
+  </ion-chip>
+  <br>
+  <ion-button color="success" expand="block" [routerLink]="['/start-trip']" (click)='closePopover()'>
+    Bring me!
+  </ion-button>
+  <ion-button color="primary" expand="block" fill='outline' [routerLink]="['/start-trip']" (click)='closePopover()'>
+    <!-- <strong style="text-align: left">A. </strong> -->
+    No thanks
+  </ion-button>
+
+</ion-content>
